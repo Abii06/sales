@@ -1,0 +1,217 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center fixed; /* Background image */
+  background-size: cover;
+  color: #fff; /* Default text color */
+}
+
+/* App Styles */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation Styles */
+.navigation {
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-button {
+  background: #3182ce; /* Blue 700 */
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  background: #2b6cb0; /* Darker Blue */
+}
+
+/* Notification Styles */
+.notification {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #38a169; /* Green */
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  z-index: 50;
+  transition: all 0.3s ease;
+}
+
+/* Item List Styles */
+.item-list {
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin: 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.item-card {
+  background: rgba(255, 255, 255, 0.9); /* White background with transparency */
+  border: 2px solid #bee3f8; /* Blue 200 */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.item-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
+}
+
+.item-name {
+  font-weight: 600;
+  color: #2d3748; /* Gray 800 */
+}
+
+.item-category {
+  color: #718096; /* Gray 600 */
+}
+
+.item-price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #3182ce; /* Blue 700 */
+}
+
+.buy-button {
+  margin-top: 0.5rem;
+  width: 100%;
+  background: linear-gradient(to right, #48bb78, #38a169); /* Green */
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.buy-button:hover {
+  background: linear-gradient(to right, #38a169, #2f855a); /* Darker Green */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Sales History Styles */
+.sales-history {
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.sort-select {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.select {
+  padding: 0.5rem;
+  border: 1px solid #cbd5e0; /* Gray 300 */
+  border-radius: 0.25rem;
+  background: white;
+  color: #2d3748; /* Gray 800 */
+}
+
+.sales-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sale-card {
+  background: rgba(255, 255, 255, 0.9); /* White background with transparency */
+  border: 2px solid #bee3f8; /* Blue 200 */
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.sale-name {
+  font-weight: 600;
+  color: #2d3748; /* Gray 800 */
+}
+
+.sale-price {
+  color: #2d3748; /* Gray 800 */
+}
+
+.sale-timestamp {
+  color: #718096; /* Gray 600 */
+}
+
+.delete-button {
+  background: #e53e3e; /* Red */
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.delete-button:hover {
+  background: #c53030; /* Darker Red */
+}
+
+/* Sales Chart Styles */
+.sales-chart {
+  padding: 1rem;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pie-chart-container, .bar-chart-container {
+  width: 48%;
+}
+
+.chart-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
