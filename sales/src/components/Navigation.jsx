@@ -2,23 +2,14 @@ import React from 'react';
 
 const Navigation = ({ activeSection, setActiveSection }) => (
   <div className="navigation">
-    <button 
-      onClick={() => setActiveSection('items')}
-      className={`nav-button ${activeSection === 'items' ? 'active' : ''}`}
-    >
-      <span>Home</span>
+    <button onClick={() => setActiveSection('items')} className={activeSection === 'items' ? 'active' : ''}>
+      Home
     </button>
-    <button 
-      onClick={() => setActiveSection('sales')}
-      className={`nav-button ${activeSection === 'sales' ? 'active' : ''}`}
-    >
-      <span>Sales</span>
+    <button onClick={() => setActiveSection('sales')} className={activeSection === 'sales' ? 'active' : ''}>
+      Sales
     </button>
-    <button 
-      onClick={() => setActiveSection('charts')}
-      className={`nav-button ${activeSection === 'charts' ? 'active' : ''}`}
-    >
-      <span>Charts</span>
+    <button onClick={() => setActiveSection('charts')} className={activeSection === 'charts' ? 'active' : ''}>
+      Charts
     </button>
   </div>
 );

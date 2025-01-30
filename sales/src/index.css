@@ -4,21 +4,19 @@ body {
   font-family: Arial, sans-serif;
   background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center fixed; /* Background image */
   background-size: cover;
-  color: #fff; /* Default text color */
+  color: #fff;
 }
 
-/* App Styles */
 .app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* Navigation Styles */
 .navigation {
   display: flex;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  background: rgba(0, 0, 0, 0.7); 
   padding: 1rem;
   position: sticky;
   top: 0;
@@ -26,7 +24,7 @@ body {
 }
 
 .nav-button {
-  background: #3182ce; /* Blue 700 */
+  background: #3182ce;
   color: white;
   padding: 0.5rem 1rem;
   border: none;
@@ -37,16 +35,14 @@ body {
 }
 
 .nav-button:hover {
-  background: #2b6cb0; /* Darker Blue */
+  background: #2b6cb0;
 }
-
-/* Notification Styles */
 .notification {
   position: fixed;
   top: 1rem;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #38a169; /* Green */
+  background-color: #38a169; 
   color: white;
   padding: 1rem 1.5rem;
   border-radius: 0.5rem;
@@ -55,10 +51,9 @@ body {
   transition: all 0.3s ease;
 }
 
-/* Item List Styles */
 .item-list {
   padding: 1rem;
-  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  background: rgba(0, 0, 0, 0.7); 
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   margin: 1rem;
@@ -78,8 +73,8 @@ body {
 }
 
 .item-card {
-  background: rgba(255, 255, 255, 0.9); /* White background with transparency */
-  border: 2px solid #bee3f8; /* Blue 200 */
+  background: rgba(255, 255, 255, 0.9); 
+  border: 2px solid #bee3f8;
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -93,17 +88,17 @@ body {
 
 .item-name {
   font-weight: 600;
-  color: #2d3748; /* Gray 800 */
+  color: #2d3748; 
 }
 
 .item-category {
-  color: #718096; /* Gray 600 */
+  color: #718096; 
 }
 
 .item-price {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #3182ce; /* Blue 700 */
+  color: #3182ce; 
 }
 
 .buy-button {
@@ -125,10 +120,9 @@ body {
   transform: translateY(-2px);
 }
 
-/* Sales History Styles */
 .sales-history {
   padding: 1rem;
-  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  background: rgba(0, 0, 0, 0.7); 
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
@@ -147,10 +141,10 @@ body {
 
 .select {
   padding: 0.5rem;
-  border: 1px solid #cbd5e0; /* Gray 300 */
+  border: 1px solid #cbd5e0;
   border-radius: 0.25rem;
   background: white;
-  color: #2d3748; /* Gray 800 */
+  color: #2d3748;
 }
 
 .sales-list {
@@ -160,8 +154,8 @@ body {
 }
 
 .sale-card {
-  background: rgba(255, 255, 255, 0.9); /* White background with transparency */
-  border: 2px solid #bee3f8; /* Blue 200 */
+  background: rgba(255, 255, 255, 0.9); 
+  border: 2px solid #bee3f8; 
   padding: 0.75rem;
   border-radius: 0.5rem;
   display: flex;
@@ -172,19 +166,19 @@ body {
 
 .sale-name {
   font-weight: 600;
-  color: #2d3748; /* Gray 800 */
+  color: #2d3748;
 }
 
 .sale-price {
-  color: #2d3748; /* Gray 800 */
+  color: #2d3748; 
 }
 
 .sale-timestamp {
-  color: #718096; /* Gray 600 */
+  color: #718096; 
 }
 
 .delete-button {
-  background: #e53e3e; /* Red */
+  background: #e53e3e; 
   color: white;
   padding: 0.5rem;
   border-radius: 0.25rem;
@@ -194,10 +188,8 @@ body {
 }
 
 .delete-button:hover {
-  background: #c53030; /* Darker Red */
+  background: #c53030; 
 }
-
-/* Sales Chart Styles */
 .sales-chart {
   padding: 1rem;
 }

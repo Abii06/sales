@@ -61,7 +61,7 @@ const App = () => {
     <div className="app">
       <Navigation activeSection={activeSection} setActiveSection={setActiveSection} />
       {notification && (
-        <div className="notification" style={{ marginTop: '60px' }}> {/* Adjust margin to ensure visibility */}
+        <div className="notification" style={{ marginTop: '60px' }}> 
           {notification}
         </div>
       )}
